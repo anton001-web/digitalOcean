@@ -1,0 +1,70 @@
+.amodal.open .modal-overlay,
+.amodal.open .modal-window {
+    opacity: 1;
+    z-index: 100;
+}
+
+.amodal .modal-window, .modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.amodal.open .modal-window {
+    transform: translateY(0px);
+    z-index: 15;
+    opacity: 1;
+    visibility: visible;
+}
+
+.amodal.open .modal-overlay {
+    opacity: 1;
+    visibility: visible;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.amodal.hide .modal-window {
+    transform: translateY(-400px);
+
+}
+
+.amodal.hide .modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.modal-window {
+    width: 600px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 100px auto;
+    height: 200px;
+    transform: translateY(-400px);
+    transition: all .5s;
+    z-index: 200;
+}
+
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-close {
+    cursor: pointer;
+}

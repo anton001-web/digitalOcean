@@ -1,0 +1,35 @@
+@import '~normalize.css';
+@import 'fonts.css';
+@import 'section1.css';
+@import 'header.css';
+@import 'section2.css';
+@import 'section3.css';
+@import 'section4.css';
+@import 'section5.css';
+@import 'footer.css';
+@import 'animation/TemplateAnimations.css';
+@import './modal/modal.css';
+
+.container {
+    overflow: hidden;
+}
+
+.menu-opened {
+    left: 0;
+}
+
+.menu-overlay__visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+}
+
+.grid {
+    display: grid;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@import './media/media.css';

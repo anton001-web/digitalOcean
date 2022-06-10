@@ -1,0 +1,29 @@
+@import "~normalize.css";
+@import "../header.css";
+@import "./feedback-form.css";
+
+.container {
+    overflow: hidden;
+}
+
+.menu-opened {
+    left: 0;
+}
+
+.menu-overlay__visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+}
+
+.header-back {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 15px;
+    color: #b2bec3;
+    cursor: pointer;
+    transition: all .5s;
+    margin-right: 22px;
+}
+
+@import "./feedback-form__media.css";

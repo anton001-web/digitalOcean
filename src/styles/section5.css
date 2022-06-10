@@ -1,0 +1,63 @@
+.section-5 {
+    margin-top: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    height: 250px;
+    background: rgba(232, 236, 255, 0.3);
+    grid-template-areas:
+    ". a a ."
+    ". a a .";
+
+}
+
+.section5-formInfo {
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.section5-form__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+}
+
+.formInfo-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 37px;
+    color: #058AFF;
+}
+
+.formInfo_subTitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.input-group {
+    width: 140%;
+}
+
+.input-group-append {
+    padding-left: 10px;
+}
+
+.form-btn {
+    background: #0082F4;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
